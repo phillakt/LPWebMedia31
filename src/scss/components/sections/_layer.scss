@@ -1,0 +1,318 @@
+$OpenSansR: "Open Sans", sans-serif;
+$Oswald: "Oswald", sans-serif;
+
+.layer {
+
+    &-bg-triangle {
+        background: url("../../../images/sections/one/img-1.svg") no-repeat;
+        background-position: 78%;
+
+        @media (max-width: 1499px) and (min-width: 1400px) {
+            background-position: 95%;
+        }
+        @media (max-width: 1399px) and (min-width: 1300px) {
+            background-position: 95%;
+        }
+        @media (max-width: 1299px) and (min-width: 1200px) {
+            background-position: 103%;
+            background-size: 53%;
+        }
+        @media (max-width: 1199px) and (min-width: 1100px) {
+            background-position: 103%;
+            background-size: 53%;
+        }
+        @media (max-width: 1099px) and (min-width: 1000px) {
+            background-position: 106%;
+            background-size: 55%;
+        }
+        @media (max-width: 999px) and (min-width: 992px) {
+            background-position: 103%;
+            background-size: 53%;
+        }
+        @media (max-width: 991px) and (min-width: 769px) {
+            background: none;
+        }
+        @media (max-width: 768px) and (min-width: 576px) {
+            background: none;
+        }
+        @media (max-width: 575px) and (min-width: 300px) {
+            background: none;
+        }
+
+        .title__h3  {
+
+            @media (max-width: 768px) and (min-width: 576px) {
+                text-align: center;
+                margin-bottom: 30px;
+                color: #000;
+            }
+
+            @media (max-width: 575px) and (min-width: 300px) {
+                text-align: center;
+                margin-bottom: 30px;
+                color: #000;
+            }
+        }
+    }
+
+    &-bg-gray {
+        background: url("../../../images/sections/bg/bg-gray.svg") no-repeat;
+        background-size: cover;
+    }
+
+    &-bg-sections-two__1 {
+        background: url("../../../images/sections/two/img-1.svg") no-repeat;
+        background-position: 90%;
+
+        @media (max-width: 1499px) and (min-width: 1400px) {
+            background-position: 100%;
+            background-size: 47%;
+        }
+        @media (max-width: 1399px) and (min-width: 1300px) {
+            background-position: 100%;
+            background-size: 47%;
+        }
+        @media (max-width: 1299px) and (min-width: 1200px) {
+            background-position: 100%;
+            background-size: 47%;
+        }
+        @media (max-width: 1199px) and (min-width: 1100px) {
+            background-position: 100%;
+            background-size: 47%;
+        }
+        @media (max-width: 1099px) and (min-width: 1000px) {
+            background-position: 100%;
+            background-size: 47%;
+        }
+        @media (max-width: 999px) and (min-width: 992px) {
+            background-position: 100%;
+            background-size: 47%;
+        }
+        @media (max-width: 991px) and (min-width: 769px) {
+            background: none;
+        }
+        @media (max-width: 768px) and (min-width: 576px) {
+            background: none;
+        }
+        @media (max-width: 575px) and (min-width: 300px) {
+            background: none;
+        }
+    }
+
+    &-bg-sections-three__1 {
+        background: url("../../../images/sections/three/img-1.svg") no-repeat;
+        background-position: 5%;
+
+        @media (max-width: 1499px) and (min-width: 1400px) {
+            background-position: 0%;
+            background-size: 45%;
+        }
+        @media (max-width: 1399px) and (min-width: 1300px) {
+            background-position: 0%;
+            background-size: 45%;
+        }
+        @media (max-width: 1299px) and (min-width: 1200px) {
+            background-position: 0%;
+            background-size: 45%;
+        }
+        @media (max-width: 1199px) and (min-width: 1100px) {
+            background-position: 0%;
+            background-size: 45%;
+        }
+        @media (max-width: 1099px) and (min-width: 1000px) {
+            background-position: 0%;
+            background-size: 45%;
+        }
+        @media (max-width: 999px) and (min-width: 992px) {
+            background-position: 0%;
+            background-size: 45%;
+        }
+        @media (max-width: 991px) and (min-width: 769px) {
+            background: none;
+        }
+        @media (max-width: 768px) and (min-width: 576px) {
+            background: none;
+        }
+        @media (max-width: 575px) and (min-width: 300px) {
+            background: none;
+        }
+    }
+
+    &-bg-sections-four__1 {
+        background: url("../../../images/sections/four/img-1.svg") no-repeat;
+        background-position: 100%;
+
+        @media (max-width: 1499px) and (min-width: 1400px) {
+            background-position: 100%;
+            background-size: 55%;
+        }
+        @media (max-width: 1399px) and (min-width: 1300px) {
+            background-position: 100%;
+            background-size: 55%;
+        }
+        @media (max-width: 1299px) and (min-width: 1200px) {
+            background-position: 100%;
+            background-size: 53%;
+        }
+        @media (max-width: 1199px) and (min-width: 1100px) {
+            background-position: 100%;
+            background-size: 53%;
+        }
+        @media (max-width: 1099px) and (min-width: 1000px) {
+            background-position: 100%;
+            background-size: 55%;
+        }
+        @media (max-width: 999px) and (min-width: 992px) {
+            background-position: 100%;
+            background-size: 53%;
+        }
+        @media (max-width: 991px) and (min-width: 769px) {
+            background: none;
+        }
+        @media (max-width: 768px) and (min-width: 576px) {
+            background: none;
+        }
+        @media (max-width: 575px) and (min-width: 300px) {
+            background: none;
+        }
+    }
+
+
+    &-list {
+        display: flex;
+
+        @media (max-width: 991px) and (min-width: 769px) {
+            margin-left: 0 !important;
+            margin-right: 0 !important;
+        }
+        @media (max-width: 768px) and (min-width: 576px) {
+            margin-left: 0 !important;
+            margin-right: 0 !important;
+        }
+        @media (max-width: 575px) and (min-width: 300px) {
+            margin-left: 0 !important;
+            margin-right: 0 !important;
+        }
+
+        &__img {
+
+        }
+
+        &__content {
+
+            &_title {
+            }
+
+            &_desc {
+                color: #5e5e5e;
+            }
+        }
+
+        &-trans {
+
+            &_r20 {
+                transform: translate(-20px, 0px);
+                @media (max-width: 991px) and (min-width: 769px) {
+                    transform: translate(0px, 0px);
+                }
+                @media (max-width: 768px) and (min-width: 576px) {
+                    transform: translate(0px, 0px);
+                }
+                @media (max-width: 575px) and (min-width: 300px) {
+                    transform: translate(0px, 0px);
+                }
+            }
+            
+            &_r40 {
+                transform: translate(-40px, 0px);
+                @media (max-width: 991px) and (min-width: 769px) {
+                    transform: translate(0px, 0px);
+                }
+                @media (max-width: 768px) and (min-width: 576px) {
+                    transform: translate(0px, 0px);
+                }
+                @media (max-width: 575px) and (min-width: 300px) {
+                    transform: translate(0px, 0px);
+                }
+            }
+
+            &_r60 {
+                transform: translate(-60px, 0px);
+                @media (max-width: 991px) and (min-width: 769px) {
+                    transform: translate(0px, 0px);
+                }
+                @media (max-width: 768px) and (min-width: 576px) {
+                    transform: translate(0px, 0px);
+                }
+                @media (max-width: 575px) and (min-width: 300px) {
+                    transform: translate(0px, 0px);
+                }
+            }
+        }
+    }
+
+    .layer-w-desc {
+        position: relative;
+
+        @media (max-width: 768px) and (min-width: 576px) {
+            text-align: center;
+        }
+        @media (max-width: 575px) and (min-width: 300px) {
+            text-align: center;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 15px;
+            height: 1px;
+            top: 10px;
+            left: -30px;
+            background: #fff;
+
+            @media (max-width: 991px) and (min-width: 769px) {
+                background: #f57e20;
+            }
+            @media (max-width: 768px) and (min-width: 576px) {
+                display: none;
+            }
+            @media (max-width: 575px) and (min-width: 300px) {
+                display: none;
+            }
+        }
+
+        @media (max-width: 991px) and (min-width: 769px) {
+            color: #000;
+            margin-left: 0 !important;
+        }
+        @media (max-width: 768px) and (min-width: 576px) {
+            color: #000;
+            margin-left: 0 !important;
+        }
+        @media (max-width: 575px) and (min-width: 300px) {
+            color: #000;
+            margin-left: 0 !important;
+        }
+    }
+
+    .quote {
+
+        &__profit {
+            font-family: $Oswald;
+            background: #eee;
+        }
+    }
+
+    &__img {
+
+        &_rocket {
+            margin-top: -70px;
+            margin-left: -90px; 
+
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+    }
+}

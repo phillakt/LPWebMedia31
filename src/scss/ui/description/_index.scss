@@ -1,0 +1,30 @@
+
+$Oswald: 'Oswald', sans-serif;
+
+.description {
+
+    @media (max-width: 575px) and (min-width: 300px) {
+        text-align: center;
+    }
+
+    &__md {
+        font-family: $Oswald;
+
+        @media (max-width: 991px) and (min-width: 769px) {
+            font-size: 26px;
+        }
+        @media (max-width: 768px) and (min-width: 300px) {
+            font-size: 16px;
+        }
+    }
+
+    &__xs {
+
+        @media (max-width: 991px) and (min-width: 769px) {
+            font-size: 26px;
+        }
+        @media (max-width: 768px) and (min-width: 300px) {
+            font-size: 16px;
+        }
+    }
+}

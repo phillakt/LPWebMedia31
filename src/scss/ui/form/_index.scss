@@ -1,0 +1,12 @@
+
+label {
+    cursor: pointer;
+    display: inline-flex;
+
+    span {
+
+        &::selection {
+            background: none;
+        }
+    }
+}

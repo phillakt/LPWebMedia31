@@ -1,0 +1,39 @@
+
+// Autoprefixer
+@import "../../node_modules/sass-autoprefixer/scss/prefixes";
+@import "../../node_modules/bootstrap-4-grid/css/grid.min.css";
+@import "../../node_modules/swiper/css/swiper.min.css";
+@import '../scss/components/slider/slider.scss';
+
+// Fonts
+// @import "./fonts/Tesla/index.css";
+// @import "./fonts/TTLakes-Bold/index.css";
+// @import "./fonts/TTLakes-Light/index.css";
+// @import "./fonts/OpenSans-Regular/index.css";
+
+// $Tesla: 'TESLA Regular';
+// $LakesB: 'TT Lakes Bold';
+// $LakesEL: 'TT Lakes Extra Light';
+// $OpenSansR: 'Open Sans Regular';
+// Fonts end
+
+$OpenSansR: 'Open Sans', sans-serif;
+$Oswald: 'Oswald', sans-serif;
+
+
+* { 
+    margin: 0; 
+    padding: 0; 
+}
+
+body {
+    font-family: $OpenSansR;
+}
+
+.tt-upper {
+    text-transform: uppercase;
+}
+
+.tac {
+    text-align: center;
+}

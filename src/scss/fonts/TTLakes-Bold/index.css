@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'TT Lakes Bold';
+    src: url('../../../fonts/TTLakes-Bold/TTLakes-Bold.eot');
+    src: url('../../../fonts/TTLakes-Bold/TTLakes-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../../../fonts/TTLakes-Bold/TTLakes-Bold.woff') format('woff'),
+    url('../../../fonts/TTLakes-Bold/TTLakes-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }

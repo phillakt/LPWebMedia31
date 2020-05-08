@@ -1,0 +1,10 @@
+
+@font-face {
+    font-family: 'TESLA Regular';
+    src: url('../../../fonts/Tesla/TESLA.eot');
+    src: url('../../../fonts/Tesla/TESLA.eot?#iefix') format('embedded-opentype'),
+    url('../../../fonts/Tesla/TESLA.woff') format('woff'),
+    url('../../../fonts/Tesla/TESLA.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
