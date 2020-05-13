@@ -9,11 +9,11 @@
 <body>
     
     <header>
-        <div class="header pt-50 pb-80 mb-80">
+        <div id="layer-one" class="header pt-10">
             <div class="header-bg__smartphone">
 
                 <div class="container">
-                    <div class="row align-items-start mb-60">
+                    <div class="row align-items-start mb-30">
                         <div class="col-lg-2 col-md-9 col-sm-8 col-6">
                             <a href="#!">
                                 <img class="logo" src="../images/header/logo.svg" alt="logo">
@@ -32,10 +32,10 @@
                         <div class="col-lg-6 offset-lg-1">
                             <div class="menu mt-10">
                                 <ul class="menu__box pb-30 fjc-sb">
-                                    <li><a href="#!" class="fs fs__20 menu-active">В начало</a></li>
-                                    <li><a href="#!" class="fs fs__20">наши преимущества</a></li>
-                                    <li><a href="#!" class="fs fs__20">Услуги</a></li>
-                                    <li><a href="#!" class="fs fs__20">О нас</a></li>
+                                    <li><a href="#layer-one" class="fs fs__20 menu-el menu-active">В начало</a></li>
+                                    <li><a href="#layer-two" class="fs fs__20 menu-el">наши преимущества</a></li>
+                                    <li><a href="#layer-three" class="fs fs__20 menu-el">Услуги</a></li>
+                                    <li><a href="#layer-four" class="fs fs__20 menu-el">О нас</a></li>
                                 </ul>
                                 <div class="menu-bar-wrapp">
                                     <div class="menu-bar">
@@ -50,59 +50,62 @@
     
                     <div class="row">
                         <div class="col-lg-6">
-                            <h3 class="title title__h3 c-white fs fs-28 mb-30">Как не потерять бизнес и заработать в 2020?</h3>
-                            <h2 class="title title__h2 c-white fs fs-46 mb-30">Мы переведем ваш бизнес </h2>
+                            <h3 class="title title__h3 c-white fs fs-24 mb-10">Как не потерять бизнес и заработать в 2020?</h3>
+                            <h2 class="title title__h2 c-white fs fs-38">Мы переведем ваш бизнес </h2>
                             <h1 class="title title__h1 c-white fs fs-80">в онлайн!</h1>
     
-                            <div class="row">
-                                <div class="col-lg-8 offset-lg-4">
-                                    <p class="c-white fs fs-20 mt-60 tt-upper">
-                                        Избавимся от обстоятельств!
-                                        Мы создаем возможности!
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="row align-items-end mt-30">
-                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                            <div class="row align-items-start mt-50">
+                                <div class="col-lg-6">
                                     <div>
                                         <button class="show-modal button button-wht tt-upper c-black pt-30 pb-30 fs fs-20">
                                             Узнать как
                                         </button>
                                     </div>
                                 </div>
-                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                <div class="col-lg-6">
+                                    <p class="c-white fs fs-18 tt-upper title">
+                                        Избавимся от обстоятельств!
+                                        Мы создаем возможности!
+                                    </p>
                                     <div class="arrow-by-btn">
                                         <img src="../images/header/arrow-by-btn.svg" alt="arrow-by-btn">
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="fjc-c">
-                                <div class="dots-scroll">
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                </div>
+                        <div class="col-lg-6">
+                            <div class="header-img__1">
+                                <img src="../images/header/img-1.svg" alt="img-1" class="img-res" style="transform: translate(0, 80px) scale(1.1);">
                             </div>
+                        </div>
 
-                            <div class="fjc-c">
-                                <div class="mouse-scroll">
-                                    <span class="mouse-scroll__dot"></span>
+                        <div class="col-lg-12">
+                            <div class="header-dots-mouse">
+                                <div class="fjc-c">
+                                    <div class="dots-scroll">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </div>
+    
+                                <div class="fjc-c">
+                                    <a href="#layer-two" class="mouse-scroll menu-el">
+                                        <span class="mouse-scroll__dot"></span>
+                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>
     </header>
 
     <!-- layer - 1 -->
-    <section class="layer layer-bg-triangle mb-100">
+    <section id="layer-two" class="layer layer-bg-triangle pt-40 mb-100">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -163,10 +166,10 @@
 
                 </div>
 
-                <div class="col-lg-5 offset-lg-1">
-                    <h3 class="title title__h3 fs fs-30 mt-60 c-white">
+                <div class="col-lg-6 layer-bg-triangle__img">
+                    <div class="description description__md fs fs-30 mt-60 c-white">
                         Не все разбираются в технологиях, поэтому мы сделаем все за вас!
-                    </h3>
+                    </div>
                     <div class="ml-30 mt-30 mr-30">
                         <div class="layer-w-desc c-white mb-20 ml-10">Подбор имени сайта</div>
                         <div class="layer-w-desc c-white mb-20 ml-20">Домен, хостинг</div>
@@ -179,7 +182,7 @@
     </section>
 
     <!-- layer - 2 -->
-    <section class="layer layer-bg-gray pt-90 pb-90">
+    <section id="layer-three" class="layer layer-bg-gray pt-90 pb-90">
         <div class="layer-bg-sections-two__1">
             <div class="container">
                 <div class="row">
@@ -230,10 +233,30 @@
                             </div>
                         </div>
     
+                        <div class="row">
+                            <div class="col-lg-6 offset-lg-3">
+                                <div class="fs fs-20 mt-40">
+                                    <h3 class="title title__h2">от  <span class="ml-10 mr-10 c-orange fs fs-40">25 000</span>  руб</h3>
+                                </div>
+                                <div class="mt-30">
+                                    <button class="show-modal button button-ora fjc-c fai-c pt-30 pb-30 fs fs-18 c-white tt-upper">
+                                        <span class="mr-10">Отправить заявку</span>
+                                        <img src="../images/button/shevron.svg" alt="shevron">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+    
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div>
+                            <img src="../images/sections/two/img-1.svg" alt="img-1" class="img-res">
+                        </div>
                     </div>
                 </div>
     
-                <div class="row">
+                <!-- <div class="row">
                     <div class="col-lg-10 offset-lg-2">
                         <div class="fs fs-20 mt-40">
                             <h3 class="title title__h2">от  <span class="ml-10 mr-10 c-orange fs fs-40">25 000</span>  руб</h3>
@@ -250,7 +273,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
@@ -259,7 +282,15 @@
     <section class="layer layer-bg-sections-three__1 pt-90 pb-90 mb-100">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 offset-lg-6">
+
+                <div class="col-lg-6">
+                    <div>
+                        <img src="../images/sections/three/img-1.svg" alt="img-1" class="img-res">
+                    </div>
+                </div>
+
+
+                <div class="col-lg-6">
                     <div class="mb-30">
                         <h3 class="title title__h2 c-black fs fs-40 mb-30 tt-upper">Интернет-магазин + реклама</h3>
                         <p class="description description__md fs fs-24 tt-upper">Продавать через интернет - <span class="c-orange">легко</span></p>
@@ -309,7 +340,7 @@
 
                 <div class="col-lg-6 offset-lg-5 mt-40">
                     <!-- layer-list - 1 -->
-                    <div class="ml-50 mb-20 layer-list">
+                    <div class="fai-c ml-50 mb-20 layer-list">
                         <div class="layer-list__img mr-20">
                             <img src="../images/icons/sections/three/icon-1.svg" alt="icon">
                         </div>
@@ -321,7 +352,7 @@
                     </div>
 
                     <!-- layer-list - 2 -->
-                    <div class="ml-30 mb-20 layer-list">
+                    <div class="fai-c ml-30 mb-20 layer-list">
                         <div class="layer-list__img mr-20">
                             <img src="../images/icons/sections/three/icon-2.svg" alt="icon">
                         </div>
@@ -333,7 +364,7 @@
                     </div>
 
                     <!-- layer-list - 3 --> 
-                    <div class="ml-10 mb-20 layer-list">
+                    <div class="fai-c ml-10 mb-20 layer-list">
                         <div class="layer-list__img mr-20">
                             <img src="../images/icons/sections/three/icon-3.svg" alt="icon">
                         </div>
@@ -344,9 +375,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="row">
                 <div class="col-lg-6 offset-lg-5">
                     <div class="fs fs-20 mt-40">
                         <h3 class="title title__h2">
@@ -354,6 +383,7 @@
                         </h3>
                     </div>
                 </div>
+
                 <div class="col-lg-4 offset-lg-5">
                     <div class="mt-30">
                         <button class="show-modal button button-ora fjc-c fai-c pt-30 pb-30 fs fs-18 c-white tt-upper">
@@ -385,42 +415,42 @@
     
                         <!-- layer-list - 1 -->
                         <div class="ml-10 mt-30 layer-list">
-                            <div class="provided-list__img mr-20">
+                            <div class="layer-list__img mr-20">
                                 <img src="../images/icons/sections/two/dot.svg" alt="dot">
                             </div>
                             <div class="layer-list__content">
-                                <p class="layer-list__content_title mb-20 fs fs-18 mt-10">
+                                <p class="layer-list__content_title fs fs-18 mt-10">
                                     Анализ аудитории
                                 </p>
                             </div>
                         </div>
                         
                         <!-- layer-list - 2 -->
-                        <div class="ml-30 mt-30 layer-list">
+                        <div class="ml-30 mt-10 layer-list">
                             <div class="layer-list__img mr-20">
                                 <img src="../images/icons/sections/two/dot.svg" alt="dot">
                             </div>
                             <div class="layer-list__content">
-                                <p class="layer-list__content_title mb-20 fs fs-18 mt-10">
+                                <p class="layer-list__content_title fs fs-18 mt-10">
                                     Запуск до ХХХ объявлений
                                 </p>
                             </div>
                         </div>
                         
                         <!-- layer-list - 3 -->
-                        <div class="ml-60 mt-30 layer-list">
+                        <div class="ml-60 mt-10 mb-30 layer-list">
                             <div class="layer-list__img mr-30">
                                 <img src="../images/icons/sections/two/dot.svg" alt="dot">
                             </div>
                             <div class="layer-list__content">
-                                <p class="layer-list__content_title mb-20 fs fs-18 mt-10">
+                                <p class="layer-list__content_title fs fs-18 mt-10">
                                     Постоянный анализ и корректировка объявлений
                                 </p>
                             </div>
                         </div>
 
                         <!-- layer-list - 4 -->
-                        <div class="ml-60 pl-30 mt-30 layer-list">
+                        <div class="ml-60 pl-30 mt-10 mb-30 layer-list">
                             <div class="layer-list__img mr-30">
                                 <img src="../images/icons/sections/four/icon-1.svg" alt="planet">
                             </div>
@@ -432,23 +462,25 @@
                         </div>
                         
                         <!-- layer-list - 5 -->
-                        <div class="ml-60 pl-60 mt-30 layer-list">
+                        <div class="ml-60 pl-60 mt-10 layer-list">
                             <div class="layer-list__img mr-30">
                                 <img src="../images/icons/sections/four/icon-2.svg" alt="planet">
                             </div>
                             <div class="layer-list__content">
                                 <p class="layer-list__content_desc fs ds-16">
-                                    Сделаем так, что о вашей компании узнают многие!
+                                    Для повышения конверсии мы можем проанализировать ваш сайт и взять все необходимые корректировки в работу
                                 </p>
                             </div>
                         </div>
 
-
-    
                     </div>
-                </div>
-    
-                <div class="row">
+
+                    <div class="col-lg-6">
+                        <div>
+                            <img src="../images/sections/four/img-1.svg" alt="img-1" class="img-res">
+                        </div>
+                    </div>
+
                     <div class="col-lg-10 offset-lg-2">
                         <div class="fs fs-20 mt-40">
                             <h3 class="title title__h2">от  <span class="ml-10 mr-10 c-orange fs fs-40">25 000</span>  руб</h3>
@@ -466,12 +498,14 @@
                         </div>
                     </div>
                 </div>
+    
+
             </div>
         </div>
     </section>
 
     <!-- layer - 5 -->
-    <section class="layer pt-90">
+    <section id="layer-four" class="layer pt-90">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -640,6 +674,15 @@
                             </div>
                         </form>
 
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="fjc-c">
+                                    <div>
+                                        <img src="../images/footer/img-2.svg" alt="img-2" class="img-res">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -700,7 +743,6 @@
             </form>
         </div>
     </section>
-
 
     <section id="m-form-modal__callback" class="m-form-modal">
         <div class="m-form-modal-wrapp">

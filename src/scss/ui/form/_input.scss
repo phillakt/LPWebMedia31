@@ -46,7 +46,6 @@ $OpenSansR: "Open Sans", sans-serif;
     color: #000;
     background: transparent;
     padding: 15px 20px;
-    margin-bottom: 30px;
     width: 100%;
     font-size: 18px;
 
@@ -55,7 +54,7 @@ $OpenSansR: "Open Sans", sans-serif;
     }
 
     @media (max-width: 575px) and (min-width: 300px) {
-        padding: 0 20px;
+        padding: 10px 20px;
     }
 
 
@@ -89,7 +88,4 @@ $OpenSansR: "Open Sans", sans-serif;
 .m-error-input {
     color: #ec6022;
     font-size: 11px;
-    margin-top: -13px;
-    position: relative;
-    top: -30px;
 }

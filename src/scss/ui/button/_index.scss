@@ -2,13 +2,14 @@
 $Oswald: 'Oswald', sans-serif;
 
 .button {
-    font-family: $Oswald;
     cursor: pointer;
+    font-family: $Oswald;
     width: 100%;
     height: 100%;
     border: 0;
     border-radius: 50em;
-
+    position: relative;
+    z-index: 900;
 
     &-wht {
 

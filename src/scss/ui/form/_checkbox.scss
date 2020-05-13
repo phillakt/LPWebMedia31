@@ -60,13 +60,8 @@
     &__view {
         position: relative;
         display: inline-flex;
-        width: 26px;
-        height: 26px;
+        padding: 13px;
         background: linear-gradient(180deg, #F57E20 0%, #DB2726 100%);
-
-        @media (max-width: 575px) and (min-width: 300px) {
-            width: 42px;
-        }
 
         &_on {
 

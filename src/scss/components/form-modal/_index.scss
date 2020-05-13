@@ -21,28 +21,22 @@
     }
 
     &-wrapp {
+        display: flex;
+        justify-content: center;
         width: 100%;
     }
 }
 
 .m-form {
-    height: 100vh;
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    max-width: 550px;
-    margin: 0 auto;
+    width: auto;
+    margin: 30px;
     position: relative;
     z-index: 1000;
 
-    @media (max-width: 991px) and (min-width: 769px) {
-        max-width: 460px;
-    }
-    @media (max-width: 768px) and (min-width: 576px) {
-        max-width: 460px;
-    }
-    @media (max-width: 575px) and (min-width: 300px) {
-        max-width: 320px;
+    @media (min-width: 991px) {
+        max-width: 550px;
     }
 
     &-wrapp {
@@ -71,6 +65,28 @@
             top: 0;
             width: 30px;
             height: 30px;
+        }
+    }
+
+
+
+    // custom elements
+    @media (max-width: 575px) and (min-width: 300px) {
+
+        .description__md {
+            font-size: 20px;
+        }
+
+        .layer-list__content_desc {
+            font-size: 11px;
+        }
+
+        button {
+            font-size: 15px;
+        }
+
+        .c-gray-b {
+            font-size: 12px;
         }
     }
 }

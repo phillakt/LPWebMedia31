@@ -77,7 +77,7 @@ btnFooter.addEventListener('click', function (e) {
         validateNodeErrorRemove('f-bussines')
     }
 
-    let work = validator.isLength(document.querySelector("input[name=f-work]").value, { min: 3, max: 100 });
+    let work = validator.isLength(document.querySelector("input[name=f-work]").value, { min: 1, max: 100 });
     if (!work) {
         validateNodeError('f-work');
     } else {
@@ -107,7 +107,7 @@ btnFooter.addEventListener('click', function (e) {
 
         axios({
             method: 'post',
-            url: 'http://m/mailer.php',
+            url: 'http://start.webmedia31.ru/',
             data: 'data=' + JSON.stringify(user),
         })
             .then(function (response) {
@@ -203,7 +203,7 @@ btnModal.addEventListener('click', function (e) {
 
         axios({
             method: 'post',
-            url: 'http://m/mailer.php',
+            url: 'http://start.webmedia31.ru/',
             data: 'data=' + JSON.stringify(user),
         })
             .then(function (response) {
@@ -296,7 +296,7 @@ function modalCallback() {
 //  Modal Callback end
 
 // Menu 
-
+const menuItems = document.querySelectorAll('.menu-el');
 const menuBox = document.querySelector('.menu__box');
 const menuBar = document.querySelector('.menu-bar');
 
@@ -308,6 +308,15 @@ menuBar.addEventListener('click', function () {
         menuBox.classList.add('menu__box_view');
     }
 
+});
+
+// scroll for node layers
+menuItems.forEach(function (item, i) {
+    item.addEventListener('click', function (e) {
+        e.preventDefault();
+        const nodeElem = e.target.attributes[0].nodeValue;
+        document.querySelector(nodeElem).scrollIntoView({ behavior: 'smooth' });
+    })
 });
 
 // Menu end
