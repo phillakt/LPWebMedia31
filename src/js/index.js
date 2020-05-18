@@ -21,15 +21,15 @@ function validateNodeError(param, type) {
     }
     let nodeError = document.createElement('span');
     if (!type) {
+        // for inputs footer
         nodeError.classList.add('f-error-input');
     } else {
+        // for inputs modal
         nodeError.classList.add('m-error-input');
     }
 
     nodeError.innerHTML = 'Введите корректные данные *';
     node.parentElement.append(nodeError);
-
-
 }
 
 function validateNodeErrorRemove(param) {
@@ -39,50 +39,28 @@ function validateNodeErrorRemove(param) {
     }
 }
 
+// Footer validate fields
+
 btnFooter.addEventListener('click', function (e) {
     e.preventDefault();
 
-    let name = validator.isLength(document.querySelector("input[name=f-name]").value, { min: 3, max: 100 });
-    if (!name) {
-        validateNodeError('f-name');
-    } else {
-        validateNodeErrorRemove('f-name')
-    }
+    let name = validator.isLength(document.querySelector("input[name=f-name]").value, { min: 2, max: 100 });
+    !name ? validateNodeError('f-name') : validateNodeErrorRemove('f-name');
 
     let phone = validator.isMobilePhone(document.querySelector("input[name=f-phone]").value, ['ru-RU']);
-    if (!phone) {
-        validateNodeError('f-phone');
-    } else {
-        validateNodeErrorRemove('f-phone')
-    }
+    !phone ? validateNodeError('f-phone') : validateNodeErrorRemove('f-phone');
 
     let mail = validator.isEmail(document.querySelector("input[name=f-mail]").value);
-    if (!mail) {
-        validateNodeError('f-mail');
-    } else {
-        validateNodeErrorRemove('f-mail')
-    }
+    !mail ? validateNodeError('f-mail') : validateNodeErrorRemove('f-mail');
 
     let company = validator.isLength(document.querySelector("input[name=f-company]").value, { min: 3, max: 100 });
-    if (!company) {
-        validateNodeError('f-company');
-    } else {
-        validateNodeErrorRemove('f-company')
-    }
+    !company ? validateNodeError('f-company') : validateNodeErrorRemove('f-company');
 
     let bussines = validator.isLength(document.querySelector("input[name=f-bussines]").value, { min: 3, max: 100 });
-    if (!bussines) {
-        validateNodeError('f-bussines');
-    } else {
-        validateNodeErrorRemove('f-bussines')
-    }
+    !bussines ? validateNodeError('f-bussines') : validateNodeErrorRemove('f-bussines');
 
     let work = validator.isLength(document.querySelector("input[name=f-work]").value, { min: 1, max: 100 });
-    if (!work) {
-        validateNodeError('f-work');
-    } else {
-        validateNodeErrorRemove('f-work')
-    }
+    !work ? validateNodeError('f-work') : validateNodeErrorRemove('f-work');
 
     if (name && phone && mail && company && bussines && work) {
 
@@ -136,8 +114,7 @@ btnFooter.addEventListener('click', function (e) {
 
 });
 
-// Footer form end
-
+// Footer validate fields
 
 // Modal form
 const mCheckboxLabel = document.querySelector('.m-checkbox-label');
@@ -158,39 +135,20 @@ mCheckboxLabel.addEventListener('click', function (e) {
 });
 
 
-
-
 btnModal.addEventListener('click', function (e) {
     e.preventDefault();
 
-
-    let name = validator.isLength(document.querySelector("input[name=m-name]").value, { min: 3, max: 100 });
-    if (!name) {
-        validateNodeError('m-name', 'modal');
-    } else {
-        validateNodeErrorRemove('m-name', 'modal')
-    }
+    let name = validator.isLength(document.querySelector("input[name=m-name]").value, { min: 2, max: 100 });
+    !name ? validateNodeError('m-name', 'modal') : validateNodeErrorRemove('m-name', 'modal');
 
     let phone = validator.isMobilePhone(document.querySelector("input[name=m-phone]").value, ['ru-RU']);
-    if (!phone) {
-        validateNodeError('m-phone', 'modal');
-    } else {
-        validateNodeErrorRemove('m-phone', 'modal')
-    }
+    !phone ? validateNodeError('m-phone', 'modal') : validateNodeErrorRemove('m-phone', 'modal');
 
     let mail = validator.isEmail(document.querySelector("input[name=m-mail]").value);
-    if (!mail) {
-        validateNodeError('m-mail', 'modal');
-    } else {
-        validateNodeErrorRemove('m-mail', 'modal')
-    }
+    !mail ? validateNodeError('m-mail', 'modal') : validateNodeErrorRemove('m-mail', 'modal');
 
     let comment = validator.isLength(document.querySelector("input[name=m-comment]").value, { min: 3, max: 100 });
-    if (!comment) {
-        validateNodeError('m-comment', 'modal');
-    } else {
-        validateNodeErrorRemove('m-comment', 'modal')
-    }
+    !comment ? validateNodeError('m-comment', 'modal') : validateNodeErrorRemove('m-comment', 'modal');
 
     if (name && phone && mail && comment) {
 
@@ -213,17 +171,17 @@ btnModal.addEventListener('click', function (e) {
                     fInputs.forEach(function (item, i) {
                         item.value = '';
                     });
+
+                    mFormModal.classList.remove('m-form-modal__view_on');
+                    document.body.style = 'overflow: inherit';
+
+                    // Modal Callback
+                    modalCallback();
                 }
             })
             .catch(function (error) {
                 console.log(error);
             });
-
-            mFormModal.classList.remove('m-form-modal__view_on');
-            document.body.style = 'overflow: inherit';
-
-            // Modal Callback
-            modalCallback();
     }
 
 });
@@ -259,7 +217,6 @@ mFormModalWrapp.addEventListener('click', function (e) {
         document.body.style = 'overflow: inherit';
     }
 });
-
 
 // Modal form end
 

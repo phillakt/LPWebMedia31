@@ -2,6 +2,17 @@ $OpenSansR: "Open Sans", sans-serif;
 $Oswald: "Oswald", sans-serif;
 
 .layer {
+
+    &-bg-triangle {
+        .layer-list {
+
+            @media (max-width: 575px) and (min-width: 300px) {
+                text-align: center;
+                flex-direction: column;
+            }
+        }
+    }
+
     &-bg-triangle__img {
         background: url("../../../images/sections/one/img-01.svg") no-repeat;
         background-size: 100%;
@@ -32,15 +43,14 @@ $Oswald: "Oswald", sans-serif;
     &-bg-gray {
         background: url("../../../images/sections/bg/bg-gray.svg") no-repeat;
         background-size: cover;
+        padding-bottom: 155px;
     }
 
     &-bg-sections-two__1 {
+
     }
 
     &-bg-sections-three__1 {
-        .col-lg-6.offset-lg-5.mt-40 {
-            margin-top: -60px;
-        }
 
         @media (max-width: 999px) {
             .col-lg-6.offset-lg-5.mt-40 {
@@ -58,6 +68,15 @@ $Oswald: "Oswald", sans-serif;
             .mb-20.layer-list {
                 margin-left: 15px !important;
             }
+
+            &__bg {
+
+                &_one {
+                    max-width: 90%;
+                    position: absolute;
+                }
+            }
+    
         }
     }
 

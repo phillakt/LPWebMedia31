@@ -4,9 +4,13 @@
     padding-top: 225px;
     margin-top: -125px;
 
+    @media (max-width: 1199px) {
+        .img-res {
+            display: none;
+        }
+    }
+
     @media (max-width: 999px) and (min-width: 992px) {
-        background-position: 100% 100%;
-        background-size: 32%;
     }
     @media (max-width: 991px) and (min-width: 769px) {
     }
@@ -95,5 +99,25 @@
         //     background: none;
         //     padding-bottom: 60px;
         // }
+    }
+}
+
+.footer-copyright {
+    background: #f06c21;
+
+    &__box {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+
+        a {
+            text-decoration: none;
+        }
+
+        img {
+            @media (max-width: 575px) and (min-width: 300px) {
+                width: 50%;
+            }
+        }
     }
 }

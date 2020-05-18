@@ -6,8 +6,16 @@ $Oswald: "Oswald", sans-serif;
     background: url("../../../images/header/bg-lines.svg") no-repeat;
     background-size: 100% 100%;
 
-    @media (max-width: 1200px) and (min-width: 1000px) {
+    @media (min-width: 1400px) {
+        .header-dots-mouse {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: -85px;
+        }
+    }
 
+    @media (max-width: 1200px) and (min-width: 1000px) {
         .c-white.fs.fs-18.tt-upper.title {
             font-size: 16px;
         }
@@ -22,20 +30,26 @@ $Oswald: "Oswald", sans-serif;
         padding-bottom: 100px !important;
     }
     @media (max-width: 575px) and (min-width: 300px) {
+        height: auto;
         padding-bottom: 100px !important;
     }
 
     @media (max-width: 999px) {
-        height: 100vh;
+        // height: 100vh;
 
         .c-white.fs.fs-18.tt-upper.title {
             text-align: center;
             margin: 10px 0;
-         }
+        }
+    }
+
+    .logo {
+        @media (max-width: 575px) and (min-width: 300px) {
+            width: 50%;
+        }
     }
 
     &-bg__smartphone {
-
     }
 
     &-img__1 {
@@ -54,6 +68,7 @@ $Oswald: "Oswald", sans-serif;
         @media (max-width: 575px) and (min-width: 300px) {
             display: flex;
             justify-content: flex-end;
+            font-size: 14px;
         }
     }
 
