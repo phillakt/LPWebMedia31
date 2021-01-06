@@ -4,7 +4,7 @@
   "description": "",
   "private": true,
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "bootstrap-4-grid": "^3.4.0",
     "gsap": "^3.2.6",
     "swiper": "^5.3.8",
