@@ -8,7 +8,7 @@
     "bootstrap-4-grid": "^3.4.0",
     "gsap": "^3.2.6",
     "swiper": "^5.3.8",
-    "validator": "^13.0.0",
+    "validator": "^13.7.0",
     "webpack-cli": "^3.3.0"
   },
   "devDependencies": {
